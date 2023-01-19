@@ -1,0 +1,2 @@
+namespace: project-dev
+server: https://kubernetes.default.svc

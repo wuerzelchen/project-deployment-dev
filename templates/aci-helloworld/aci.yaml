@@ -9,8 +9,8 @@ metadata:
     name: project-dev
 spec:
   destination:
-    namespace: project-dev
-    server: https://kubernetes.default.svc
+    namespace: {{ .Values.namespace }}
+    server: {{ .Values.server }}
   project: default
   source:
     repoURL: 'https://github.com/wuerzelchen/project-deployment-dev'

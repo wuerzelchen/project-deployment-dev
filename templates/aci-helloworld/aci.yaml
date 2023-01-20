@@ -13,7 +13,7 @@ spec:
     server: {{ .Values.server }}
   project: default
   source:
-    repoURL: https://github.com/wuerzelchen/project-deployment-dev
+    repoURL: 'https://github.com/wuerzelchen/project-deployment-dev'
     chart: aci-helloworld
     targetRevision: 0.1.0
   syncPolicy:

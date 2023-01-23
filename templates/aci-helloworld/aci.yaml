@@ -9,7 +9,7 @@ metadata:
     name: project-dev
 spec:
   destination:
-    namespace: {{ .Values.namespace }}
+    namespace: project-dev
     server: 'https://kubernetes.default.svc'
   project: default
   source:

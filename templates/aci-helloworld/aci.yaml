@@ -10,7 +10,7 @@ metadata:
 spec:
   destination:
     namespace: {{ .Values.namespace }}
-    server: {{ .Values.server }}
+    server: https://kubernetes.default.svc
   project: default
   source:
     repoURL: 'https://github.com/wuerzelchen/project-deployment-dev'

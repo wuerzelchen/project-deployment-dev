@@ -20,7 +20,7 @@ spec:
       values: |
         image:
           repository: acr3efn4.azurecr.io/aci-hello
-          tag: 0.1.1
+          tag: latest
   syncPolicy:
     automated:
       prune: true

@@ -15,7 +15,7 @@ spec:
   source:
     repoURL: 'acr3efn4.azurecr.io'
     chart: aci-hello
-    targetRevision: 0.1.0
+    targetRevision: 0.1.1
   syncPolicy:
     automated:
       prune: true

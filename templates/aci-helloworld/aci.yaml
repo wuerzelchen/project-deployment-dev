@@ -13,8 +13,8 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: default
   source:
-    repoURL: 'https://github.com/wuerzelchen/project-deployment-dev'
-    chart: aci-helloworld
+    repoURL: 'acr3efn4.azurecr.io'
+    chart: aci-hello
     targetRevision: 0.1.0
   syncPolicy:
     automated:

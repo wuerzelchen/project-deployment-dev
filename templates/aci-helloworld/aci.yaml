@@ -16,6 +16,11 @@ spec:
     repoURL: 'acr3efn4.azurecr.io'
     chart: aci-hello
     targetRevision: 0.1.1
+    helm:
+      values: |
+        image:
+          repository: acr3efn4.azurecr.io/aci-hello
+          tag: 0.1.1
   syncPolicy:
     automated:
       prune: true

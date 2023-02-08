@@ -1,17 +1,17 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app-of-apps
+  name: workload-deployment-dev
   namespace: argocd
   finalizers:
   - resources-finalizer.argocd.argoproj.io
   labels:
-    name: project-dev
+    name: workload-dev
 spec:
   destination:
     namespace: {{ .Values.namespace }}
     server: 'https://kubernetes.default.svc'
-  project: default
+  project: dev
   source:
     repoURL: 'wkshpyxqqp.azurecr.io'
     chart: aci-hello

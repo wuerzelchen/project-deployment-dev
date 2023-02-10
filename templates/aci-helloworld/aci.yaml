@@ -13,13 +13,13 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: dev
   source:
-    repoURL: 'wkshpyps75.azurecr.io'
+    repoURL: 'wkshp0f5xk.azurecr.io'
     chart: aci-hello
     targetRevision: 0.1.1
     helm:
       values: |
         image:
-          repository: wkshpyps75.azurecr.io/aci-hello
+          repository: wkshp0f5xk.azurecr.io/aci-hello
           tag: latest
   syncPolicy:
     automated:

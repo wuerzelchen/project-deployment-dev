@@ -1,0 +1,29 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: workload-dev
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+  labels:
+    name: workload-dev
+spec:
+  destination:
+    namespace: {{ .Values.namespace }}
+    server: 'https://kubernetes.default.svc'
+  project: dev
+  source:
+    repoURL: 'wkshp3nkzl.azurecr.io'
+    chart: demo
+    targetRevision: 0.1.0
+    helm:
+      values: |
+        image:
+          repository: wkshp3nkzl.azurecr.io/exampleweb
+          tag: latest
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true

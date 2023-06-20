@@ -13,13 +13,13 @@ spec:
     server: 'https://kubernetes.default.svc'
   project: dev
   source:
-    repoURL: 'wkshp3nkzl.azurecr.io'
+    repoURL: 'wkshpflqsk.azurecr.io'
     chart: demo
     targetRevision: 0.1.0
     helm:
       values: |
         image:
-          repository: wkshp3nkzl.azurecr.io/exampleweb
+          repository: wkshpflqsk.azurecr.io/exampleweb
           tag: latest
         service:
           type: LoadBalancer
